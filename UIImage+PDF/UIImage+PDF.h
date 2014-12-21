@@ -12,7 +12,7 @@
 #import "NSString+MD5.h"
 
 
-@interface UIImage( PDF )
+@interface UIImage (PDF)
 
 +(void)setShouldCacheOnDisk:(BOOL)shouldCache; // Default = YES
 +(void)setShouldCacheInMemory:(BOOL)shouldCache; // Default = NO

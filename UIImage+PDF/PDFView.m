@@ -118,18 +118,24 @@
 }
 
 
-+(NSURL *)resourceURLForName:(NSString *)resourceName
++(NSURL *)resourceURLForName:(NSString *)resourceName type:(NSString *)type
 {
-    NSString *path = [[ NSBundle mainBundle ] pathForResource:resourceName ofType:nil ];
+    NSString *path = [[NSBundle mainBundle] pathForResource:resourceName ofType:type];
     if( path == nil )
     {
         return nil;
     }
     else
     {
-        return ( resourceName ) ? [ NSURL fileURLWithPath:path] : nil;
+        return (resourceName) ? [ NSURL fileURLWithPath:path] : nil;
     }
 }
+
++ (NSURL *)resourceURLForName:(NSString *)resourceName
+{
+    return [self resourceURLForName:resourceName type:nil];
+}
+
 
 
 +(void)renderIntoContext:(CGContextRef)ctx url:(NSURL *)resourceURL data:(NSData *)resourceData size:(CGSize)size page:(NSUInteger)page
