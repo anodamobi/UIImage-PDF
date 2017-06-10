@@ -5,12 +5,13 @@
 //  Copyright 2011 Mindbrix Limited. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import Foundation;
+
 #import "UIView+Image.h"
 #import "PDFView.h"
 #import "NSData+MD5.h"
 #import "NSString+MD5.h"
-
 
 @interface UIImage (PDF)
 

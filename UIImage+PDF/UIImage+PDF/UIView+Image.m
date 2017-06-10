@@ -7,8 +7,7 @@
 
 #import "UIView+Image.h"
 
-
-@implementation UIView( Image )
+@implementation UIView (Image)
 
 -(UIImage *)image
 {

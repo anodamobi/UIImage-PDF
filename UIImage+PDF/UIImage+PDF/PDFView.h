@@ -5,6 +5,9 @@
 //  Copyright 2011 Mindbrix Limited. All rights reserved.
 //
 
+@import UIKit;
+@import Foundation;
+
 @interface PDFView : UIView
 
 @property( nonatomic, assign ) NSUInteger page;
