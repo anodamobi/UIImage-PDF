@@ -9,7 +9,7 @@
 
 @implementation UIView (Image)
 
--(UIImage *)image
+-(UIImage *)_image
 {
 	if( [ self.layer respondsToSelector:@selector(setShouldRasterize:)])
 	{
